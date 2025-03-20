@@ -5,9 +5,5 @@
     "test",
     "dist",
     "**/*spec.ts"
-  ],
-  "compilerOptions": {
-    "module": "CommonJS",
-    "esModuleInterop": true
-  }
+  ]
 }

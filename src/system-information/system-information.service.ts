@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import si from "systeminformation";
+import * as si from "systeminformation";
 
 export interface SystemSerialInfo {
     systemInfoSerial: string;
