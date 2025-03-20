@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: poc-get-host-serial-number
+    privileged: true
+    ports:
+      - 3000:3000
+    restart: always
+    volumes:
+      - /sys/class/dmi/id:/sys/class/dmi/id:ro
+      - /dev:/dev:ro
